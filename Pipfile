@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sqlalchemy = "*"
+psycopg2 = "*"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+pytest = "*"
+python-dotenv = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.6"
+
+[scripts]
+start = "python -m src.main"
+test = "python -m src.utils.test"
